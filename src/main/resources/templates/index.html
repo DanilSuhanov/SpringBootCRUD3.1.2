@@ -24,9 +24,13 @@
       <td th:text="${user.password}"></td>
       <td th:text="${user.email}"></td>
       <td th:text="${user.age}"></td>
+      <td><a th:href="@{update/{id}(id=${user.id})}">Edit</a></td>
+      <td><a th:href="@{delete/{id}(id=${user.id})}">Delete</a></td>
     </tr>
     </tbody>
   </table>
+  <br>
+  <a href="/new">Create new User</a>
 </div>
 </body>
 </html>
